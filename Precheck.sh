@@ -25,3 +25,5 @@ echo " "
 echo "Ip Details:"
 echo "-----------"
 ip a
+echo " "
+echo "-------The End --------"
