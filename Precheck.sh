@@ -38,9 +38,11 @@ echo " "
 echo "Kernel Avaliablity:"
 echo "-------------------"
     yum list kernel
+echo " "
 echo "Avaliable Patches:"
 echo "------------------"
     yum updateinfo list sec
 echo " "
 echo "-------------------------------------------------The End-------------------------------------------------"
+
 
