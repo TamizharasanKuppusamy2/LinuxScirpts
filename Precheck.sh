@@ -2,28 +2,41 @@
 
 
 #####  This is a precheck script
-####  Author : Tamizharasan K
+#####  Author : Tamizharasan K
+#####  This is for RHEL servers
 
 echo "Server : $(hostname)"
 echo " "
 echo "Uptime:"
 echo "------"
-uptime
+    uptime
 echo " "
 echo "Kernel Version:"
 echo "--------------"
-uname -r
+    uname -r
 echo " "
 echo "System Mount Points:"
 echo "--------------------"
-df -hT | grep -v tmpfs
+    df -hT | grep -v tmpfs
 echo " "
 echo "Route Details:"
 echo "--------------"
-route -n
+    route -n
 echo " "
 echo "Ip Details:"
 echo "-----------"
-ip a
+    ip a
 echo " "
-echo "-------The End --------"
+    yum clean all
+echo "Repolist"
+echo "--------"
+    yum repolist
+echo " "
+echo "Kernel Avaliablity:"
+echo "-------------------"
+    yum list kernel
+echo "Avaliable Patches:"
+echo "------------------"
+    yum updateinfo list sec
+echo " "
+echo "-------------------------------------------------The End-------------------------------------------------"
