@@ -7,6 +7,8 @@
 
 echo "Server : $(hostname)"
 echo " "
+echo "Date : $(date)"
+echo " "
 echo "Uptime:"
 echo "------"
     uptime
@@ -21,7 +23,7 @@ echo "--------------------"
 echo " "
 echo "Route Details:"
 echo "--------------"
-    route -n
+    ip route
 echo " "
 echo "Ip Details:"
 echo "-----------"
