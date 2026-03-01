@@ -3,7 +3,12 @@
 #####  This is a precheck script
 #####  Author : Tamizharasan K
 #####  This is for RHEL servers
+<<<<<<< HEAD
 #
+=======
+
+echo " "
+>>>>>>> d9e9bc20ce0138cf6648fd69a888d93572127e16
 echo "Server : $(hostname)"
 echo " "
 echo "Date : $(date)"
@@ -35,9 +40,16 @@ echo "--------"
 echo " "
 echo "Kernel Avaliablity:"
 echo "-------------------"
+<<<<<<< HEAD
     echo "$(yum list kernel)"
+=======
+    yum list kernel
+echo " "
+>>>>>>> d9e9bc20ce0138cf6648fd69a888d93572127e16
 echo "Avaliable Patches:"
 echo "------------------"
     echo "$(yum updateinfo list sec)"
 echo " "
 echo "-------------------------------------------------The End-------------------------------------------------"
+
+
